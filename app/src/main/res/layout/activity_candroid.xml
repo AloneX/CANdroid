@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent">
+
+    <ToggleButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/tb_start"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:onClick="onStart"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Mode: Overwrite"
+        android:id="@+id/btn_mode"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/tb_start"
+        android:layout_toEndOf="@+id/tb_start"
+        android:onClick="onMode" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Connect"
+        android:id="@+id/btn_connect"
+        android:layout_alignParentTop="true"
+        android:layout_toRightOf="@+id/btn_mode"
+        android:layout_toEndOf="@+id/btn_mode"
+        android:onClick="onConnect" />
+
+    <ExpandableListView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/tb_start"
+        android:layout_alignStart="@+id/tb_start"
+        android:layout_alignLeft="@+id/tb_start"
+        android:id="@+id/elv_can_messages" />
+
+</RelativeLayout>
